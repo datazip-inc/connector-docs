@@ -1,11 +1,13 @@
 .content {
   font-family: "Ubuntu", sans-serif;
-  color: #222;
+  /*color: #222;*/
+  color: #fff;
   font-weight: 200;
 }
 
 .content time {
-  color: #9b9b9b;
+  /*color: #9b9b9b;*/
+  color: #fff;
 }
 
 .content p {
@@ -14,7 +16,8 @@
 }
 
 .content a {
-  color: blue;
+  /*color: blue;*/
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -35,7 +38,8 @@
   margin-left: -1em;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #9b9b9b;
+  /*color: #9b9b9b;*/
+  color: #fff;
   display: none;
   content: "#";
 }
@@ -87,7 +91,8 @@
 }
 
 .content table thead {
-  background: #f7f7f7;
+  /*background: #f7f7f7;*/
+  background: #121212;
 }
 
 .content table th {
