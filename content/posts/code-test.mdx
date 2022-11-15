@@ -1,0 +1,60 @@
+---
+slug: code-test
+title: Code Content with MDX
+date: 2020-06-08
+author: wutali
+tags:
+  - style
+  - mdx
+---
+
+# Just testing out [Code Hike](https://codehike.org/)
+
+Some normal `markdown`
+
+## Annotation Example
+```js index.js box=1[25:39]
+console.log("Some code. I am annotated!")
+```
+
+## Focus Example
+```js next.config.js focus=1:2,7
+const { remarkCodeHike } = require("@code-hike/mdx");
+const theme = require("shiki/themes/monokai.json");
+
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [[remarkCodeHike, { theme }]],
+    rehypePlugins: [],
+  },
+});
+
+module.exports = withMDX({
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+});
+```
+
+[//]: # (<CH.Section>)
+
+[//]: # ()
+[//]: # (## Code Links Example)
+
+[//]: # ()
+[//]: # (We are looking at the [console.log]&#40;focus://console.js#2&#41; function today)
+
+[//]: # ()
+[//]: # (<CH.Code>)
+
+[//]: # (```js console.js)
+
+[//]: # (console.table&#40;["Hello", "World"]&#41;)
+
+[//]: # (console.log&#40;"Hello World"&#41;)
+
+[//]: # (```)
+
+[//]: # (</CH.Code>)
+
+[//]: # ()
+[//]: # (</CH.Section>)

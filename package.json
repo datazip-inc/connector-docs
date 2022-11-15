@@ -10,7 +10,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@code-hike/mdx": "^0.7.4",
     "@mapbox/rehype-prism": "^0.6.0",
+    "@mdx-js/loader": "^2.1.5",
+    "@next/mdx": "^13.0.3",
     "@svgr/webpack": "^5.5.0",
     "@types/js-yaml": "^4.0.0",
     "date-fns": "^2.19.0",
