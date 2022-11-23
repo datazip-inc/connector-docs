@@ -15,7 +15,7 @@ export default function Mixpanel() {
       {/* Cards - 3x reusable */}
       <Card />
       {/* Other connectors link */}
-      <p>Explore more connectors </p>
+      <p>Explore more connectors</p>
 
       {/* Sections */}
       <Section />
@@ -37,7 +37,7 @@ export default function Mixpanel() {
       <br />
       {/* Footer */}
       <Footer />
-      
+
       {/* Todo: Make a back to top button component which can be re-used through the project */}
     </>
   );

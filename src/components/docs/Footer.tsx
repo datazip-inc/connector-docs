@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/Footer.module.css"
+
 export default function Footer() {
   return (
     <div>

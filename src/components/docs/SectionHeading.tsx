@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/SectionHeading.module.css"
+
 export default function SectionHeading() {
   return (
     <div>

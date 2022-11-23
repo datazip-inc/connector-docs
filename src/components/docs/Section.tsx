@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/Section.module.css"
+
 export default function Section() {
     return(
         <div>

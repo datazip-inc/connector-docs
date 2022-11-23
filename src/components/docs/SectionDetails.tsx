@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/SectionDetails.module.css"
+
 export default function SectionDetails() {
   return (
     <div>

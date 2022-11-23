@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/UseCases.module.css"
+
 export default function UseCases() {
   return (
     <div>

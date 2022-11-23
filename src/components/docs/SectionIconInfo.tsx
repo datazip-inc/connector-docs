@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/SectionIconInfo.module.css"
+
 export default function SectionIconInfo() {
   return (
       <div>

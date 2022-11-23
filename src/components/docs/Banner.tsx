@@ -1,6 +1,8 @@
+import styles from "../../../public/styles/docs/Banner.module.css"
+
 export default function Banner() {
   return (
-    <div>
+    <div className={styles.banner}>
       <div>
         <h1>Mixpanel</h1>
       </div>

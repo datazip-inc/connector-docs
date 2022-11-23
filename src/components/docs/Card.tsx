@@ -1,3 +1,5 @@
+import styles from "../../../public/styles/docs/Card.module.css"
+
 export default function Card() {
   return (
     <div>
