@@ -1,16 +1,20 @@
-import styles from "../../../public/styles/docs/SectionDetails.module.css"
+import styles from '../../../public/styles/docs/SectionDetails.module.css';
 
-export default function SectionDetails() {
+type Props = {
+  heading?: string;
+  title: string;
+  p1?: string;
+  p2?: string;
+  center?: boolean;
+};
+
+export default function SectionDetails(props: Props) {
   return (
-    <div>
-      <div>
-        <p>Placeholder for image</p>
-        <h3>Competitive Pricing</h3>
-        <p>
-          Unbelievable pricing as our infrastructure runs in your environment
-          and we scale only when required.
-        </p>
-      </div>
+    <div className={props.center ? `${styles.container} ${styles.center}` : styles.container}>
+      {props.heading ? <h1 className={styles.h1}>{props.heading}</h1> : ''}
+      <h2 className={styles.h2}>{props.title}</h2>
+      {props.p1 ? <p className={styles.p}>{props.p1}</p> : ''}
+      {props.p2 ? <p className={styles.p}>{props.p2}</p> : ''}
     </div>
   );
 }

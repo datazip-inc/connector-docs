@@ -1,21 +1,32 @@
-import styles from "../../../public/styles/docs/SectionIconInfo.module.css"
+import styles from '../../../public/styles/docs/SectionIconInfo.module.css';
+import Image from 'next/image';
 
-export default function SectionIconInfo() {
+type Props = {
+  icon: string;
+  iconName: string;
+  title?: string;
+  info: string;
+  link?: string;
+};
+
+export default function SectionIconInfo(props: Props) {
   return (
-      <div>
-        <h2>About Mixpanel</h2>
-        <p>
-          Mixpanel is a business analytics service that tracks user interactions
-          with web and mobile applications. Mixpanel’s analytics enables teams
-          to improve the website visitor experience by providing analytical
-          data—in real time and across devices—on how (and why) visitors engage,
-          convert, and retain.
-        </p>
-        <p>
-          Use Datazip's Mixpanel connector to compile reports about user
-          engagement, segmentation, retention, and so on. For supported streams,
-          check click on ‘Data Streams.’
-        </p>
+    <div className={styles.container}>
+      <Image
+        className={styles.icon}
+        src={props.icon}
+        alt={`Section icon - ${props.iconName}`}
+        height={85}
+        width={85}
+      />
+      {props.title ? <h3 className={styles.h3}>{props.title}</h3> : ''}
+      <p className={styles.p}>{props.info}</p>
+      {props.link ? (
+      <div className={styles.link}>
+        <p>{props.link}</p>
+        <Image src="/images/line.svg" height={10} width={20} alt="read more" />
       </div>
+      ) : ""}
+    </div>
   );
 }

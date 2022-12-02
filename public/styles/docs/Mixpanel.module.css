@@ -1,0 +1,9 @@
+.benefits_img {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.explore {
+    display: none;
+}

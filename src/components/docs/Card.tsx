@@ -1,12 +1,16 @@
 import styles from "../../../public/styles/docs/Card.module.css"
 
-export default function Card() {
+type Props = {
+  title: string,
+  info: string
+}
+
+export default function Card(props: Props) {
   return (
-    <div>
-      <h1>Connector Tags</h1>
-      <p>
-        Business Analysts, Data Analysts, Digital Marketing, Social Media
-        Managers.
+    <div className={styles.container}>
+      <h1 className={styles.h1}>{props.title}</h1>
+      <p className={styles.p}>
+        {props.info}
       </p>
     </div>
   );

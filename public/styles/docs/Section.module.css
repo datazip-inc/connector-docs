@@ -1,0 +1,26 @@
+.menu {   
+    display: flex;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overscroll-behavior-y: contain;
+    margin: 0 2.5rem;
+}
+
+.container {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    margin: 1rem 0.8rem;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0 1.3rem;
+    border-radius: 2rem
+}
+
+.h2 {
+    font-size: 1rem;
+}
+
+.container:hover, .container:focus-within {
+    background-color: #6068DB;
+    border: 1px solid #6068DB;
+}
