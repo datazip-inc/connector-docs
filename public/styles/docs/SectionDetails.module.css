@@ -1,0 +1,22 @@
+.container {
+    margin: 0 2.5rem;
+}
+
+.h1 {
+    color: #6068DB;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+}
+
+.p {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}
+
+.center {
+    text-align: center;
+}

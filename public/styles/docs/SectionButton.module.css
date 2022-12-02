@@ -1,0 +1,10 @@
+.container {
+    margin: 1rem 2.5rem;
+}
+
+.p {
+    padding: 1rem 2rem;
+    background-color: #6068DB;
+    width: fit-content;
+    border-radius: 0.5rem
+}

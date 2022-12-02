@@ -1,0 +1,35 @@
+.container {
+    margin: 1rem auto 0 auto;
+    display: grid;
+    text-align: center;
+    max-width: 60%;
+}
+
+.icon {
+    justify-self: center;
+    width: 2.5rem;
+    align-self: end;
+}
+
+.h3 {
+    font-size: 1rem;
+}
+
+.p {
+    margin-top: 0.2rem;
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.56);
+}
+
+.link {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link p {
+    margin: 0 .3rem;
+    color: #599BF9;
+}
